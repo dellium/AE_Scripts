@@ -1,0 +1,1 @@
+﻿app.beginUndoGroup("Duplicator");var thisComp = app.project.activeItem;var sel = thisComp.selectedLayers;if (sel.length > 0) {    var dup = prompt("Cuantos duplicados?", 100);        for (i=0; i<dup; i++) {        sel[0].duplicate();    }} else alert("Selecciona al menos 1 layer");app.endUndoGroup();

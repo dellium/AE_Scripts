@@ -1,0 +1,1 @@
+﻿#include Functions.jsxapp.beginUndoGroup("Mover");var thisComp = app.project.activeItem;var sel = thisComp.selectedLayers;if (sel.length > 0) {    var f = prompt("Cuantos frames?", 2);        for (i=0; i<sel.length; i++) {        sel[i].startTime = frameMove(f) * i;    }} else alert("Selecciona al menos 1 layer");app.endUndoGroup();
